@@ -1,2 +1,2 @@
-# my-customa-themes
-Customa themes created by me
+# My Customa Themes
+
