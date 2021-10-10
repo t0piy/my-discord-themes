@@ -1,2 +1,2 @@
-# My Customa Themes
+# My Discord Themes
 
