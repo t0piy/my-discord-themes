@@ -22,6 +22,7 @@
     --ColTransparent2: rgba(0, 0, 0, .2);
     --ColLink: var(--ColAccent);
     --ColWindowBar: var(--ColAppBG);
+    --ColWhite: #fafafa;
     --DisplayButtonEmoji: flex;
     --DisplayButtonGIF: flex;
     --DisplayButtonGift: none;
@@ -37,6 +38,10 @@
 @font-face {
     font-family: BlenderProBold;
     src: url("https://www.cyberpunk.net/fonts/BlenderPro-Bold.woff2") format("woff2");
+}
+@font-face {
+    font-family: BlenderProBook;
+    src: url("https://www.cyberpunk.net/fonts/BlenderPro-Book.woff2") format("woff2");
 }
 body {
     background: var(--ColAppBG);
@@ -304,7 +309,7 @@ body {
 .bsi-settings-card.card-o7rAq-,
 .bsi-settings-module-card .body-1zRX82 div[role=radiogroup] > div:not([aria-checked=true]):not(:hover),
 .button-14-BFJ.enabled-2cQ-u7:hover {
-    color: #fafafa
+    color: var(--ColWhite)
 }
 .button-1ZiXG9:hover,
 .button-3HqqDX,
@@ -2060,7 +2065,10 @@ textarea.textarea-2r0oV8.input-cIJ7To {
     color: var(--ColAccent)
 }
 .selected-aXhQR6.container-2Pjhx- {
-    color: var(--ColAppBG)
+    font-family: BlenderProBold;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: var(--ColAppBG);
 }
 .avatar-AvHqJA {
     border: 8px solid var(--ColAppBG);
@@ -2085,7 +2093,7 @@ textarea.textarea-2r0oV8.input-cIJ7To {
     color: var(--ColAppBG)
 }
 .base-PmTxvP {
-    color: #fafafa
+    color: var(--ColWhite)
 }
 .iconBadge-1N56q1 {
     background-color: var(--ColBackground2)
@@ -2105,7 +2113,7 @@ textarea.textarea-2r0oV8.input-cIJ7To {
     padding-bottom: 10px;
     position: relative;
     margin: 0 0 18px;
-    color: #000000;
+    color: var(--ColAppBG);
 }
 .header-2SF4Nh.fontDisplay-1dagSA.base-1x0h_U.size20-17Iy80:after {
     content: "";
@@ -2164,7 +2172,7 @@ path[d="M20 7H12L10.553 5.106C10.214 4.428 9.521 4 8.764 4H3C2.447 4 2 4.447 2 5
     background: var(--ColBackground2)
 }
 .bar-30k2ka {
-    color: #fafafa
+    color: var(--ColWhite)
 }
 .bar-30k2ka.unreadMentionsBar-1Bu1dC.mention-1f5kbO.active-1SSsBb {
     background: #ff043c
@@ -2201,11 +2209,42 @@ div[class="item-3HknzM item-PXvHYJ selected-3s45Ha themed-OHr7kt"] {
     background-color: var(--ColTransparent2);
 }
 .modeSelected-346R90 .content-1x5b-n, .modeSelected-346R90:hover .content-1x5b-n {
-    background-color: rgb(2 215 242 / 32%);
+    background-color: var(--ColBackground2);
+}
+.modeConnected-3IsKId .name-23GUGE, .modeConnected-3IsKId:hover .name-23GUGE, .modeSelected-346R90 .name-23GUGE, .modeSelected-346R90:hover .name-23GUGE, .modeUnread-1qO3K1 .name-23GUGE, .modeUnread-1qO3K1:hover .name-23GUGE, .notInteractive-1X92pj.modeConnected-3IsKId .name-23GUGE, .notInteractive-1X92pj.modeSelected-346R90 .name-23GUGE {
+    color: var(--ColAppBG);
 }
 div[class="colorStandard-2KCXvj size14-e6ZScH sectionTitle-b-eawy textContent-3N7xXx voiceSectionText-vrWR1s"], div[class="colorStandard-2KCXvj size12-3cLvbJ textContent-3N7xXx voiceSectionText-vrWR1s"] {
-    color: #fafafa
+    color: var(--ColWhite)
 }
 h5[class="emptyHeader-3lmLcs fontDisplay-1dagSA base-1x0h_U size16-1P40sf"] {
+    color: var(--ColAppBG)
+}
+.headerText-2F0828 {
+    font-family: BlenderProBold;
+    font-size: 14px;
+}
+.container-2ax-kl {
+    font-size: 14px;
+    font-family: BlenderProBold;
+}
+.title-29uC1r {
+    font-size: 16px;
+    font-family: BlenderProBold;
+    text-transform: uppercase;
+}
+h2[class="title-30qZAO container-2ax-kl"] {
+    font-size: 16px;
+}
+path[fill="hsl(216, calc(var(--saturation-factor, 1) * 3.7%), 73.5%)"] {
+    fill: var(--ColWhite);
+}
+.topic-TCb_qw.expandable-9fI_e3 {
+    font-family: BlenderProBook;
+}
+.wrapper-1sSZUt.fontDisplay-1dagSA.base-1x0h_U.size20-17Iy80 {
+    font-family: BlenderProBold;
+}
+.modeSelected-346R90 .content-1x5b-n .icon-1DeIlz {
     color: var(--ColAppBG)
 }
